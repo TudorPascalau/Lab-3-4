@@ -132,12 +132,44 @@ int sortOferte(ServiceOferta* s, Oferta** rez, FunctieComparare cmpF);
  */
 int filterOferte(ServiceOferta* s, Oferta** rez, int criteriu, const char* tip, float suprafata, int pret);
 
+/**
+ * Functie helper pentru sortarea crescatoare dupa pret
+ * param o1: adresa primei oferte de comparat
+ *		 o2: adresa celei de-a doua oferte de comparat
+ * pre: o1: Oferta, o2: Oferta
+ * post: se returneaza valoarea de adevar a comparatiei
+ * return: valoarea de adevar a comparatiei
+ */
 int cmpPret(Oferta* o1, Oferta* o2);
 
+/**
+ * Functie helper pentru sortarea descrescatoare dupa pret
+ * param o1: adresa primei oferte de comparat
+ *		 o2: adresa celei de-a doua oferte de comparat
+ * pre: o1: Oferta, o2: Oferta
+ * post: se returneaza valoarea de adevar a comparatiei
+ * return: valoarea de adevar a comparatiei
+ */
 int cmpPretDescresc(Oferta* o1, Oferta* o2);
 
+/**
+ * Functie helper pentru sortarea crescatoare dupa tip
+ * param o1: adresa primei oferte de comparat
+ *		 o2: adresa celei de-a doua oferte de comparat
+ * pre: o1: Oferta, o2: Oferta
+ * post: se returneaza valoarea de adevar a comparatiei
+ * return: valoarea de adevar a comparatiei
+ */
 int cmpTip(Oferta* o1, Oferta* o2);
 
+/**
+ * Functie helper pentru sortarea descrescatoare dupa tip
+ * param o1: adresa primei oferte de comparat
+ *		 o2: adresa celei de-a doua oferte de comparat
+ * pre: o1: Oferta, o2: Oferta
+ * post: se returneaza valoarea de adevar a comparatiei
+ * return: valoarea de adevar a comparatiei
+ */
 int cmpTipDescresc(Oferta* o1, Oferta* o2);
 
 
